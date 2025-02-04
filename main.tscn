@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://1hq15llo4q"]
+
+[node name="Node" type="Node"]
+
+[node name="Node" type="Node" parent="."]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="Node"]
+
+[node name="TileMap" type="TileMap" parent="Node"]
+format = 2
+
+[node name="TextureRect" type="TextureRect" parent="Node"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="enemy" type="CharacterBody2D" parent="Node"]
+
+[node name="Sprite2D" type="Sprite2D" parent="Node/enemy"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node/enemy"]
